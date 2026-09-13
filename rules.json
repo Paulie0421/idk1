@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": { "url": "chrome-extension://mecimancgfpbdclngldaaogiacgpcpbd/blocked.html" }
+    },
+    "condition": {
+      "urlFilter": "minecraft.net",
+      "resourceTypes": ["main_frame"]
+    }
+  },
+  {
+    "id": 2,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": { "url": "chrome-extension://mecimancgfpbdclngldaaogiacgpcpbd/blocked.html" }
+    },
+    "condition": {
+      "urlFilter": "facebook.com",
+      "resourceTypes": ["main_frame"]
+    }
+  }
+]

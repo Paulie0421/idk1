@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "School Blocker",
+  "version": "1.0",
+  "description": "Blocks unwanted websites.",
+  "permissions": [
+    "declarativeNetRequest"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "declarative_net_request": {
+    "rule_resources": [{
+      "id": "ruleset",
+      "enabled": true,
+      "path": "rules.json"
+    }]
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["blocked.html","script.js"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}

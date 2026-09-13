@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restricted Access</title>
+    <style>
+        /* Base Reset */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        }
+
+        /* Dark Charcoal Grey Radial Gradient */
+        body {
+            background: #2b2b2b; /* Fallback color */
+            background: radial-gradient(circle, #4a4a4a 0%, #1a1a1a 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        /* Layout Container */
+        .block-container {
+            text-align: center;
+            max-width: 450px;
+            width: 90%;
+            padding: 20px;
+        }
+
+        /* Blue Restricted Text Heading */
+        h1 {
+            font-size: 28px;
+            font-weight: 500;
+            color: #31bbdd; /* Changed to high-visibility blue */
+            margin-bottom: 8px;
+            letter-spacing: -0.5px;
+        }
+
+        /* Small Subtext description */
+        .subtext {
+            font-size: 14px;
+            color: #cccccc; /* Soft light grey for subtle contrast */
+            margin-bottom: 24px;
+            line-height: 1.4;
+        }
+
+        /* Blue Padlock Icon Container */
+        .icon-container {
+            margin-bottom: 30px;
+        }
+
+        /* High-visibility Vibrant Blue Color */
+        .blue-lock {
+            fill: #31bbdd; 
+        }
+
+        /* Primary Action Control */
+        .btn-bypass {
+            background-color: #31bbdd;
+            color: #ffffff;
+            padding: 12px 32px;
+            font-size: 14px;
+            font-weight: 500;
+            border-radius: 4px;
+            cursor: pointer;
+            border: none;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            transition: background-color 0.15s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        }
+
+        .btn-bypass:hover {
+            background-color: #0066cc;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="block-container">
+        <!-- Restricted Text Heading (Blue) -->
+        <h1>Restricted</h1>
+        
+        <!-- Small description subtext -->
+        <p class="subtext">This website has been blocked by your administrator</p>
+
+        <!-- Minimalist Blue Lock Icon -->
+        <div class="icon-container">
+            <svg class="blue-lock" viewBox="0 0 24 24" width="100" height="100" xmlns="http://w3.org">
+                <path d="M12 2C9.24 2 7 4.24 7 7v3H6c-1.1 0-2 .9-2 2v8c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2v-8c0-1.1-.9-2-2-2h-1V7c0-2.76-2.24-5-5-5zm-3 5c0-1.66 1.34-3 3-3s3 1.34 3 3v3H9V7z"/>
+            </svg>
+        </div>
+        
+        <!-- Single Bypass Interactive Button -->
+        <button id="bypassBtn" class="btn-bypass">Bypass</button>
+    </div>
+
+    <!-- JavaScript logic to validate code input -->
+    <script src="script.js"></script>
+
+</body>
+</html>
